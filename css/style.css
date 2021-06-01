@@ -60,7 +60,7 @@
 }
 
 .password-control {
-  background: url('/img/show_icon.svg');
+  background: url('./img/show_icon.svg');
   background-repeat: no-repeat;
   display: inline-block;
   width: 22px;
