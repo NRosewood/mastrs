@@ -113,7 +113,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   color: #23262F;
@@ -286,14 +286,12 @@ body {
   .start__left {
     display: none;
   }
+  .start {height: auto;}
   .start-right__content {
-    padding: 0 15px;
+    padding: 30px 15px;
   }
   .bottom-links {
     margin-bottom: 50px;
-  }
-  .start__right .bottom-links {
-    margin-top: 5em;
   }
   .page-title, .register-subtitle {
     text-align: center;
