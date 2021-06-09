@@ -34,9 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const sidebar = document.querySelector(".sidebar");
   const toggleMenuButton = document.querySelector(".sidebar__toogle-menu");
 
-  toggleMenuButton.addEventListener("click", () => {
-    sidebar.classList.toggle("active");
-  });
+  if (toggleMenuButton) {
+    toggleMenuButton.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  }
 
   /* header notifications */
 
@@ -45,40 +47,48 @@ document.addEventListener("DOMContentLoaded", () => {
     ".header-notifications__trigger"
   );
 
-  notificationsBtn.addEventListener("click", () => {
-    document.querySelector('body').classList.add('notifications-open');
-    notifications.classList.add("active");
-  });
+  if (notificationsBtn) {
+    notificationsBtn.addEventListener("click", () => {
+      document.querySelector('body').classList.add('notifications-open');
+      notifications.classList.add("active");
+    });
+  }
 
-  notifications.addEventListener("click", (e) => {
-    let target = e.target;
-
-    if (target.classList.contains('close-notifications')) {
-      document.querySelector('body').classList.remove('notifications-open');
-      notifications.classList.remove("active");
-    } else if (target.classList.contains('header__notifications--overlay')) {
-      document.querySelector('body').classList.remove('notifications-open');
-      notifications.classList.remove("active");
-    }
-
-  });
+  if (notifications) {
+    notifications.addEventListener("click", (e) => {
+      let target = e.target;
+  
+      if (target.classList.contains('close-notifications')) {
+        document.querySelector('body').classList.remove('notifications-open');
+        notifications.classList.remove("active");
+      } else if (target.classList.contains('header__notifications--overlay')) {
+        document.querySelector('body').classList.remove('notifications-open');
+        notifications.classList.remove("active");
+      }
+  
+    });
+  }
 
   /* header account */
 
   const accountWrapper = document.querySelector('.header__account');
   const accountDropdownTrigger = document.querySelector('.header__account-dropdown-btn');
 
-  accountDropdownTrigger.addEventListener('click', () => {
-    accountWrapper.classList.toggle('active');
-  })
+  if (accountDropdownTrigger) {
+    accountDropdownTrigger.addEventListener('click', () => {
+      accountWrapper.classList.toggle('active');
+    })
+  }
 
-  accountWrapper.addEventListener('click', (e) => {
-    let target = e.target;
-
-    if (target.classList.contains('header__account--overlay')) {
-      accountWrapper.classList.remove('active');
-    }
-  });
+  if (accountWrapper) {
+    accountWrapper.addEventListener('click', (e) => {
+      let target = e.target;
+  
+      if (target.classList.contains('header__account--overlay')) {
+        accountWrapper.classList.remove('active');
+      }
+    });
+  }
 
   /* mobile menu */
 
@@ -86,12 +96,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.querySelector('.mobile-menu-wrapper');
   const closeMobileMenuBtn = document.querySelector('.mobile-menu__close-icon');
 
-  burgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('show', 'fade-in');
-  })
+  if (burgerBtn) {
+    burgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('show', 'fade-in');
+    })
+  }
 
-  closeMobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('show');
-  });
+  if (closeMobileMenuBtn) {
+    closeMobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('show');
+    });
+  }
 
 });
