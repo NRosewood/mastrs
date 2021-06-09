@@ -1,6 +1,6 @@
-@import url('./css/components.css');
-@import url('./css/modal.css');
-@import url('./css/mobile-menu.css');
+@import url('/css/components.css');
+@import url('/css/modal.css');
+@import url('/css/mobile-menu.css');
 
 .wrapper {
   max-width: 1440px;
