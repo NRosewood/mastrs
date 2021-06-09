@@ -40,6 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const mediaQuery = window.matchMedia('(max-width: 991px)');
+
+  window.addEventListener('resize', () => {
+    if (mediaQuery) {
+      sidebar.classList.remove("active");
+    }
+  })
+
+
   /* header notifications */
 
   const notifications = document.querySelector(".header__notifications");
