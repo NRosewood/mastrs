@@ -533,29 +533,26 @@ body {
 }
 
 .verification-account {
-  max-width: 115px;
-  position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   align-items: center;
   margin: 14px auto 0 auto;
 }
 
-.verification-account::before {
-  position: absolute;
-  content: "";
-  width: 18px;
-  height: 17px;
-  display: block;
-  background-image: url('.././img/verification-icon.svg');
-  background-repeat: no-repeat;
+.verification-icon {
+  margin-right: 10px;
 }
 
 .verification-account__text {
   color: #22C2A4;
   font-size: 12px;
-  padding-left: 25px;
   margin: 0;
   line-height: 1.2;
+}
+
+.verification-account.empty .verification-account__text {
+  color: #EB5757;
 }
 
 .user-location {
@@ -655,6 +652,14 @@ body {
   margin-top: 50px;
 }
 
+.user-progress.empty .user-progress__progress-bar::after {
+  content: "0%";
+}
+
+.user-progress.empty .user-progress__progress-bar #bar {
+  stroke-dashoffset: 845;
+}
+
 .user-progress__title {
   color: #ADBBD4;
   text-align: center;
@@ -710,23 +715,23 @@ body {
   margin: 50px auto 0 auto;
 }
 
+.user-edit.empty #edit-profile--icon {
+  fill:#874CFA;
+}
+
+.user-edit svg {
+  margin-right: 10px;
+}
+
 .user-edit__text {
   position: relative;
-  padding-left: 20px;
   color: #ADBBD4;
   font-size: 12px;
 }
 
-.user-edit__text::before {
-  position: absolute;
-  left: 0;
-  top: -2px;
-  content: "";
-  width: 16px;
-  height: 16px;
-  display: block;
-  background-image: url('.././img/edit-profile-icon.svg');
-  background-repeat: no-repeat;
+.user-edit__text.empty {
+  color: #874CFA;
+  font-weight: 600;
 }
 
 .user-edit__link {
@@ -814,14 +819,14 @@ body {
   flex: 1 1 auto;
 }
 
-.courses-block__cards {
+.common-cards {
   margin-top: 18px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.courses-block__card {
+.common-card {
   background-repeat: no-repeat;
   background-position: bottom right;
   border-radius: 16px;
@@ -833,28 +838,28 @@ body {
   margin: 4px;
 }
 
-.courses-block__card.purple {
+.common-card.purple {
   background-color: #875EB6;
 }
 
-.courses-block__card.green {
+.common-card.green {
   background-color: #22C2A4;
 }
 
-.courses-block__card.orange {
+.common-card.orange {
   background-color: #FE7762;
 }
 
-.courses-block__card.blue {
+.common-card.blue {
   background-color: #4C6FFF;
 }
 
-.courses-block__card--link {
+.common-card--link {
   text-decoration: none;
   color: #fff;
 }
 
-.courses-block__card--status {
+.common-card--status {
   font-size: 12px;
   line-height: 1.5;
   padding: 5px 0;
@@ -864,19 +869,19 @@ body {
   background-color: grey;
 }
 
-.courses-block__card--status.start {
+.common-card--status.start {
   background-color: #F4651F;
 }
 
-.courses-block__card--status.in-process {
+.common-card--status.in-process {
   background-color: #874CFA;
 }
 
-.courses-block__card--status.passed {
+.common-card--status.passed {
   background-color: #22C2A4;
 }
 
-.courses-block__card--title {
+.common-card--title {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   font-weight: 700;

@@ -127,12 +127,10 @@
             <div class="header__account">
 
               <div class="header-account__header">
-                <img class="header__account-img" src="/img/placeholder-account-icon.svg"
-                  alt="User img">
+                <img class="header__account-img" src="/img/placeholder-account-icon.svg" alt="User img">
 
                 <div class="mobile-account-modal-trigger js-open-modal" data-modal="user-account--modal">
-                  <img class="mobile-account-modal-trigger__img" src="/img/placeholder-account-icon.svg"
-                  alt="User img">
+                  <img class="mobile-account-modal-trigger__img" src="/img/placeholder-account-icon.svg" alt="User img">
                 </div>
 
                 <p class="header__account-name">Привет, Иван!</p>
@@ -161,7 +159,8 @@
 
                 </ul>
 
-                <button class="header-account__button button button--black js-open-modal" data-modal="logout--modal">Выход</button>
+                <button class="header-account__button button button--black js-open-modal"
+                  data-modal="logout--modal">Выход</button>
 
               </div>
               <div class="header__account--overlay"></div>
@@ -183,32 +182,32 @@
               <div class="inner-page__left">
 
                 <div class="user-avatar">
-                  <img src="/img/inner-page-account-img.png" alt="User Avatar">
+                  <img src="/img/inner-page-account-img--empty.png" alt="User Avatar">
                 </div>
 
-                <div class="verification-account">
-                  <img src="/img/verification-icon.svg" class="verification-icon" alt="verification-icon">
-                  <div class="verification-account__text">Квалификация <br> подтверждена</div>
+                <div class="verification-account empty">
+                  <img src="/img/verification-icon-empty.svg" class="verification-icon" alt="verification-icon">
+                  <div class="verification-account__text">Квалификация <br> не подтверждена</div>
                 </div>
 
                 <div class="user-location">
-                  <div class="user-location__text">Москва</div>
+                  <div class="user-location__text">Укажите ваш город</div>
                 </div>
 
-                <div class="user-name">Андронов Иван</div>
+                <div class="user-name">Ваше имя</div>
 
-                <div class="user-age">Косметолог, 23года</div>
+                <div class="user-age">Профессия, возраст</div>
 
                 <div class="user-contacts">
                   <div class="user-phone">
-                    <div class="user-phone__text">+7 (988) 123 12 12</div>
+                    <div class="user-phone__text">+7 (900) 000 00 00</div>
                   </div>
                   <div class="user-email">
                     <div class="user-email__text">mail@gmail.com</div>
                   </div>
                 </div>
 
-                <div class="user-progress">
+                <div class="user-progress empty">
                   <div class="user-progress__title">Прогресс обучения</div>
 
                   <div class="user-progress__progress-bar">
@@ -225,7 +224,7 @@
                 </div>
 
                 <a href="#" class="user-edit__link">
-                  <div class="user-edit">
+                  <div class="user-edit empty">
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
                         <path
@@ -242,7 +241,7 @@
                         <rect y="0.5" width="16" height="16" fill="#ADBBD4" id="edit-profile--icon" />
                       </g>
                     </svg>
-                    <div class="user-edit__text">Редактировать профиль</div>
+                    <div class="user-edit__text empty">Редактировать профиль</div>
                   </div>
                 </a>
 
@@ -263,7 +262,7 @@
                       <img src="/img/progress_cart.svg">
                       <div class="progress-block-card__text">
                         <span class="progress-block-card__text--secondary">Мои клиенты купили</span>
-                        <span class="progress-block-card__text--title">189 раз</span>
+                        <span class="progress-block-card__text--title">—</span>
                       </div>
                     </div>
 
@@ -271,7 +270,7 @@
                       <img src="/img/progress_partners.svg">
                       <div class="progress-block-card__text">
                         <span class="progress-block-card__text--secondary">У меня сеть из</span>
-                        <span class="progress-block-card__text--title">34 партнеров</span>
+                        <span class="progress-block-card__text--title">—</span>
                       </div>
                     </div>
 
@@ -279,7 +278,7 @@
                       <img src="/img/progress_wallet.svg">
                       <div class="progress-block-card__text">
                         <span class="progress-block-card__text--secondary">Всего заработано</span>
-                        <span class="progress-block-card__text--title">514 768 ₽</span>
+                        <span class="progress-block-card__text--title">—</span>
                       </div>
                     </div>
 
@@ -288,6 +287,11 @@
                 </div>
 
                 <div class="courses-block inner-page__block">
+
+                  <div class="progress-block__title inner-page-emoji-title">
+                    <img src="/img/emoji_course.png" alt="emoji cup">
+                    <h3 class="inner-page-emoji-title__item">Мои курсы</h3>
+                  </div>
 
                   <div class="common-cards">
                     <div class="common-card purple"
@@ -301,7 +305,7 @@
                     <div class="common-card green"
                       style="background-image: url('/img/courses-card-img2.png');">
                       <a href="#" class="common-card--link">
-                        <div class="common-card--status in-process">В процессе</div>
+                        <div class="common-card--status start">Начать</div>
                         <div class="common-card--title">Курс от <br> Skin Ceuticals</div>
                       </a>
                     </div>
@@ -309,14 +313,14 @@
                     <div class="common-card orange"
                       style="background-image: url('/img/courses-card-img3.png');">
                       <a href="#" class="common-card--link">
-                        <div class="common-card--status in-process">В процессе</div>
+                        <div class="common-card--status start">Начать</div>
                         <div class="common-card--title">Курс от <br> Holy Land</div>
                       </a>
                     </div>
 
                     <div class="common-card blue" style="background-image: url('/img/courses-card-img4.png');">
                       <a href="#" class="common-card--link">
-                        <div class="common-card--status passed">Пройден</div>
+                        <div class="common-card--status start">Начать</div>
                         <div class="common-card--title">Курс от <br> ZO Skin Health</div>
                       </a>
                     </div>
@@ -349,7 +353,7 @@
     <div class="mobile-menu__body">
       <nav class="mobile-menu">
         <ul class="mobile-menu__list">
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -358,7 +362,7 @@
               Главная
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -367,16 +371,16 @@
               Аналитика
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
-                <img src="/img/menu_stat-icon.svg" alt="Stat icon">  
+                <img src="/img/menu_stat-icon.svg" alt="Stat icon">
               </div>
               Каталог
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -385,7 +389,7 @@
               Обучение
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -394,7 +398,7 @@
               Привлечение партнеров
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -403,7 +407,7 @@
               Помощь
             </a>
           </li>
-  
+
         </ul>
       </nav>
     </div>
@@ -434,7 +438,8 @@
         </li>
 
       </ul>
-      <button class="header-account__button button button--black js-open-modal" data-modal="logout--modal">Выход</button>
+      <button class="header-account__button button button--black js-open-modal"
+        data-modal="logout--modal">Выход</button>
     </div>
   </div>
 

@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mediaQuery = window.matchMedia('(max-width: 991px)');
 
   window.addEventListener('resize', () => {
-    if (mediaQuery) {
+    if (mediaQuery && sidebar) {
       sidebar.classList.remove("active");
     }
   })
