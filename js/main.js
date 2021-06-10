@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bulletActiveClass: "active",
         bulletClass: "slider-dot",
         clickable: true,
-      }
+      },
     });
   }
 
@@ -40,14 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const mediaQuery = window.matchMedia('(max-width: 991px)');
+  const mediaQuery = window.matchMedia("(max-width: 991px)");
 
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     if (mediaQuery && sidebar) {
       sidebar.classList.remove("active");
     }
-  })
-
+  });
 
   /* header notifications */
 
@@ -58,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (notificationsBtn) {
     notificationsBtn.addEventListener("click", () => {
-      document.querySelector('body').classList.add('notifications-open');
+      document.querySelector("body").classList.add("notifications-open");
       notifications.classList.add("active");
     });
   }
@@ -66,54 +65,55 @@ document.addEventListener("DOMContentLoaded", () => {
   if (notifications) {
     notifications.addEventListener("click", (e) => {
       let target = e.target;
-  
-      if (target.classList.contains('close-notifications')) {
-        document.querySelector('body').classList.remove('notifications-open');
+
+      if (target.classList.contains("close-notifications")) {
+        document.querySelector("body").classList.remove("notifications-open");
         notifications.classList.remove("active");
-      } else if (target.classList.contains('header__notifications--overlay')) {
-        document.querySelector('body').classList.remove('notifications-open');
+      } else if (target.classList.contains("header__notifications--overlay")) {
+        document.querySelector("body").classList.remove("notifications-open");
         notifications.classList.remove("active");
       }
-  
     });
   }
 
   /* header account */
 
-  const accountWrapper = document.querySelector('.header__account');
-  const accountDropdownTrigger = document.querySelector('.header__account-dropdown-btn');
+  const accountWrapper = document.querySelector(".header__account");
+  const accountDropdownTrigger = document.querySelector(
+    ".header__account-dropdown-btn"
+  );
 
   if (accountDropdownTrigger) {
-    accountDropdownTrigger.addEventListener('click', () => {
-      accountWrapper.classList.toggle('active');
-    })
+    accountDropdownTrigger.addEventListener("click", () => {
+      accountWrapper.classList.toggle("active");
+    });
   }
 
   if (accountWrapper) {
-    accountWrapper.addEventListener('click', (e) => {
+    accountWrapper.addEventListener("click", (e) => {
       let target = e.target;
-  
-      if (target.classList.contains('header__account--overlay')) {
-        accountWrapper.classList.remove('active');
+
+      if (target.classList.contains("header__account--overlay")) {
+        accountWrapper.classList.remove("active");
       }
     });
   }
 
   /* mobile menu */
 
-  const burgerBtn = document.querySelector('.burger-menu');
-  const mobileMenu = document.querySelector('.mobile-menu-wrapper');
-  const closeMobileMenuBtn = document.querySelector('.mobile-menu__close-icon');
+  const burgerBtn = document.querySelector(".burger-menu");
+  const mobileMenu = document.querySelector(".mobile-menu-wrapper");
+  const closeMobileMenuBtn = document.querySelector(".mobile-menu__close-icon");
 
   if (burgerBtn) {
-    burgerBtn.addEventListener('click', () => {
-      mobileMenu.classList.add('show', 'fade-in');
-    })
+    burgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.add("show", "fade-in");
+    });
   }
 
   if (closeMobileMenuBtn) {
-    closeMobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('show');
+    closeMobileMenuBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("show");
     });
   }
 
@@ -121,15 +121,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (document.querySelector(".brands__cards--slider")) {
     const swiper = new Swiper(".brands__cards--slider", {
-      slidesPerView: 1,
+      slidesPerView: "auto",
+      spaceBetween: 10,
       loop: true,
       pagination: {
         el: ".slider-dots",
         bulletActiveClass: "active",
         bulletClass: "slider-dot",
         clickable: true,
-      }
+      },
+      breakpoints: {
+        630: {
+          loop: false,
+        },
+      },
     });
   }
+
+  /* remove text from buttons on mobile */
 
 });
