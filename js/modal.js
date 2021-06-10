@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function (e) {
       var key = e.keyCode;
 
-      if (key == 27) {
+      if (key == 27 && document.querySelector(".modal.active")) {
         document.querySelector(".modal.active").classList.remove("active");
         document.querySelector(".overlay").classList.remove("active");
         document.querySelector("body").classList.remove("modal-show");
