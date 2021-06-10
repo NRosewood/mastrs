@@ -166,6 +166,32 @@ body {
   margin-right: 18px;
 }
 
+.mobile__balance {
+  display: none;
+  margin: 20px auto 0 auto;
+  max-width: 285px;
+  align-items: center;
+  background-color: rgba(252, 253, 255, 0.6);
+  padding: 9px 25px;
+  border-radius: 15px;
+}
+
+.mobile__wallet-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 18px;
+}
+
+.mobile-balance__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.mobile-balance__number {
+  font-weight: 900;
+}
+
 .header-balance__text {
   font-size: 16px;
   line-height: 24px;
@@ -586,6 +612,10 @@ body {
     display: none;
   }
 
+  .mobile__balance {
+    display: flex;
+  }
+
   .mobile-account-modal-trigger {
     display: block;
   }
@@ -624,6 +654,10 @@ body {
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
+  }
+  .inner-page-title {
+    margin-top: 0;
+    text-align: center;
   }
 }
 
