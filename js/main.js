@@ -138,6 +138,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* remove text from buttons on mobile */
+  /* dropdown edit profile */
 
+  const editProfileDropdownTrigger = document.querySelector(
+    ".edit-profile__drodown--mobile"
+  );
+  const editProfileDropdownMenu = document.querySelector(
+    ".edit-profile__drodown"
+  );
+
+
+  if (editProfileDropdownTrigger && editProfileDropdownMenu) {
+    editProfileDropdownTrigger.addEventListener("click", () => {
+      editProfileDropdownMenu.classList.toggle("active");
+
+      window.addEventListener("click", (e) => {
+        let target = e.target;
+
+        if (!target.closest(".edit-profile__drodown--mobile")) {
+          document
+            .querySelector(".edit-profile__drodown")
+            .classList.remove("active");
+        }
+      });
+    });
+  }
 });

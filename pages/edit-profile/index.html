@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/vendor/normalize.css">
+  <link rel="stylesheet" href="/css/vendor/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/pages/edit-profile/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+      <nav class="sidebar__menu">
+
+        <a class="sidebar__link active" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_home-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Главная</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_chart-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Аналитика</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_stat-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Каталог</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_bookmark-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Обучение</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_settings-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Помощь</p>
+        </a>
+
+      </nav>
+      <button class="sidebar__toogle-menu">
+        <img src="/img/menu_arrow-icon.svg" class="sidebar__toogle-menu--icon">
+      </button>
+    </aside>
+
+    <div class="main-wrapper">
+      <div class="main">
+        <header class="header">
+
+          <img class="header__logo" src="/img/main-logo_black.svg" alt="Main Logo">
+          <div class="burger-menu">
+            <img src="/img/burger-icon.svg" alt="burger menu" class="burger-menu__icon">
+          </div>
+
+          <div class="header__content">
+
+            <div class="header__balance">
+              <img class="header__wallet-icon" src="/img/wallet-icon.svg" alt="wallet">
+              <p class="header-balance__text">Ваш баланс: <span class="header-balance__number">123 347 ₽</span></p>
+            </div>
+
+            <div class="header__notifications">
+              <div class="header-notifications__trigger"></div>
+              <div class="header-notifications__content">
+
+                <div class="header-notifications__header">
+                  <img src="/img/notification-icon.svg" alt="" class="header__notifications-icon content">
+                  <div class="header-notifications__title">Ваши уведомления</div>
+                  <div class="close-notifications"></div>
+                </div>
+
+                <div class="header-notifications-content__list">
+
+                  <a class="header-notifications-content-list__item" href="#">
+                    <div class="header-notifications-content-list__img">
+                      <img src="/img/stat-icon-purple.svg">
+                    </div>
+                    <div class="header-notifications-content-list__text">
+                      <strong>В каталоге</strong> появился новый бренд “Skin Ceuticals” с самыми выгодными условиями для
+                      партнеров
+                    </div>
+                  </a>
+
+                  <a class="header-notifications-content-list__item" href="#">
+                    <div class="header-notifications-content-list__img">
+                      <img src="/img/mail-icon.svg">
+                    </div>
+                    <div class="header-notifications-content-list__text">
+                      Вам необходимо <strong>подтвердить электронную почту</strong>
+                    </div>
+                  </a>
+
+                  <a class="header-notifications-content-list__item" href="#">
+                    <div class="header-notifications-content-list__img">
+                      <img src="/img/stat-icon-purple.svg">
+                    </div>
+                    <div class="header-notifications-content-list__text">
+                      <strong>В каталоге</strong> появился новый бренд “Skin Ceuticals” с самыми выгодными условиями для
+                      партнеров
+                    </div>
+                  </a>
+
+                </div>
+
+              </div>
+              <div class="header__notifications--overlay"></div>
+
+            </div>
+
+            <div class="header__account">
+
+              <div class="header-account__header">
+                <img class="header__account-img" src="/img/placeholder-account-icon.svg" alt="User img">
+
+                <div class="mobile-account-modal-trigger js-open-modal" data-modal="user-account--modal">
+                  <img class="mobile-account-modal-trigger__img" src="/img/placeholder-account-icon.svg" alt="User img">
+                </div>
+
+                <p class="header__account-name">Привет, Иван!</p>
+                <button class="header__account-dropdown-btn">
+                  <img class="header__account-dropdown-img" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                </button>
+              </div>
+
+              <div class="header-account__content">
+
+                <ul class="header-account-list">
+
+                  <li class="header-account-list__item">
+                    <a href="#" class="header-account-list__link">
+                      <img class="header-account-list__img" src="/img/profile-icon.svg" alt="profile icon">
+                      <p class="header-account-list__name">Профиль</p>
+                    </a>
+                  </li>
+
+                  <li class="header-account-list__item">
+                    <a href="#" class="header-account-list__link">
+                      <img class="header-account-list__img" src="/img/partners-icon.svg" alt="profile icon">
+                      <p class="header-account-list__name">Привлечение партнеров</p>
+                    </a>
+                  </li>
+
+                </ul>
+
+                <button class="header-account__button button button--black js-open-modal"
+                  data-modal="logout--modal">Выход</button>
+
+              </div>
+              <div class="header__account--overlay"></div>
+
+            </div>
+
+          </div>
+
+        </header>
+        <main>
+          <div class="inner-container">
+
+            <div class="mobile__balance">
+              <img class="mobile__wallet-icon" src="/img/wallet-icon.svg" alt="wallet">
+              <p class="mobile-balance__text">Ваш баланс: <span class="mobile-balance__number">123 347 ₽</span></p>
+            </div>
+
+            <a href="#" class="js-open-modal" data-modal="edit-profile--modal">Редактировать профиль</a>
+
+          </div>
+
+      </div>
+      </main>
+    </div>
+  </div>
+
+
+  <!-- Mobile menu -->
+
+  <div class="mobile-menu-wrapper">
+
+    <div class="mobile-menu__header">
+      <div class="mobile-menu__close-icon"></div>
+      <div class="mobile-menu__logo">
+        <img src="/img/logo-mobile.svg" alt="Logo">
+      </div>
+    </div>
+
+    <div class="mobile-menu__body">
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__list">
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_home-icon.svg" alt="Home icon">
+              </div>
+              Главная
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_chart-icon.svg" alt="Chart icon">
+              </div>
+              Аналитика
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_stat-icon.svg" alt="Stat icon">
+              </div>
+              Каталог
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_bookmark-icon.svg" alt="Bookmark icon">
+              </div>
+              Обучение
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_partners-icon.svg" alt="Partners icon">
+              </div>
+              Привлечение партнеров
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_settings-icon.svg" alt="Partners icon">
+              </div>
+              Помощь
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+
+  <!-- modals-->
+
+  <div class="modal" data-modal="user-account--modal">
+    <div class="js-modal-close"></div>
+    <div class="user-account">
+      <div class="user-account__title">Привет, Иван!</div>
+      <ul class="user-account__list">
+
+        <li class="user-account__item">
+          <a class="user-account__link" href="#">
+            <img class="user-account-item__image" src="/img/profile-icon.svg">
+            <div class="user-account-item__text">Профиль</div>
+          </a>
+        </li>
+
+        <li class="user-account__item">
+          <a class="user-account__link" href="#">
+            <img class="user-account-item__image" src="/img/partners-icon.svg">
+            <div class="user-account-item__text">Привлечение партнеров</div>
+          </a>
+        </li>
+
+      </ul>
+      <button class="header-account__button button button--black js-open-modal"
+        data-modal="logout--modal">Выход</button>
+    </div>
+  </div>
+
+  <div class="modal" data-modal="logout--modal">
+    <div class="js-modal-close"></div>
+    <div class="logout-modal">
+      <img src="/img/logout-modal-img.svg">
+      <div class="logout-modal__title">Вы хотите выйти из профиля?</div>
+      <div class="logout-modal__buttons">
+        <button class="button button--black logout-modal__button">Да</button>
+        <button class="button button--orange logout-modal__button">Нет</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal edit-profile active" data-modal="edit-profile--modal">
+    <div class="js-modal-close"></div>
+
+    <div class="edit-profile">
+
+      <h2 class="edit-profile__title">Редактирование профиля</h2>
+
+      <div class="edit-profile__tabs">
+        <div class="edit-profile__tab active">Профиль</div>
+        <div class="edit-profile__tab">Пароль</div>
+        <div class="edit-profile__tab">Подтверждение квалификации</div>
+      </div>
+
+      <div class="edit-profile__drodown--mobile" role="button">
+
+        <div class="edit-profile__active-tab">Профиль</div>
+
+        <div class="edit-profile__drodown">
+          <div class="edit-profile-dropdown__item" data-item="Профиль">Профиль</div>
+          <div class="edit-profile-dropdown__item" data-item="Пароль">Пароль</div>
+          <div class="edit-profile-dropdown__item" data-item="Подтверждение квалификации">Подтверждение квалификации</div>
+        </div>
+
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="edit-profile__drodown-icon">
+          <path d="M1 1L5 5L1 9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+      </div>
+
+      <div class="tabs-content" data-content="Профиль">
+        <div class="edit-profile-block inner-page__block">
+
+          <div class="inner-page-emoji-title">
+            <img src="/img/emoji_smile.png" alt="emoji smile">
+            <h3 class="inner-page-emoji-title__item">Достижения</h3>
+          </div>
+  
+          <form action="" class="personal-data--form">
+  
+            <label for="second_name" class="form-control">
+              Фамилия
+              <input type="text" class="input-field" placeholder="Иванов" id="second_name">
+            </label>
+  
+            <label for="name" class="form-control">
+              Имя
+              <input type="text" class="input-field" placeholder="Иван" id="name">
+            </label>
+  
+            <label for="city" class="form-control">
+              Город
+              <input type="text" class="input-field" placeholder="Москва" id="city">
+            </label>
+  
+            <label for="date_of_birth" class="form-control">
+              Дата рождения
+              <input type="date" class="input-field" id="date_of_birth">
+            </label>
+  
+            <label for="profession" class="form-control">
+              Профессия
+              <input type="text" class="input-field" placeholder="Косметолог" id="profession">
+            </label>
+  
+            <label class="form-control">
+              <span>&nbsp;</span>
+              <button class="button edit-profile--button primary">Сохранить</button>
+            </label>
+  
+          </form>
+  
+        </div>
+  
+        <div class="edit-profile-block columns inner-page__block">
+  
+          <div class="form-grid">
+  
+            <form action="" class="form--with-columns">
+              <div class="form-column">
+  
+                <div class="inner-page-emoji-title form-column__title">
+                  <img src="/img/emoji_phone.png" alt="emoji phone">
+                  <h3 class="inner-page-emoji-title__item">Телефон</h3>
+                </div>
+  
+                <label for="phone" class="form-control">
+                  Номер
+                  <input type="tel" class="input-field" placeholder="+7 999 999 99 99" id="phone">
+                </label>
+  
+                <label for="confirmation_code" class="form-control confirmation_code">
+                  Код подтверждения
+                  <input type="text" class="input-field" placeholder="Код подтверждения" id="confirmation_code">
+                </label>
+  
+                <label class="form-control">
+                  <button class="button edit-profile--button primary">Сохранить</button>
+                </label>
+  
+                <div class="edit-profile__info-text">
+                  <img src="/img/info_icon.svg" alt="info icon">
+                  Вы получите SMS с кодом подтверждения
+                </div>
+  
+              </div>
+  
+            </form>
+  
+            <form action="" class="form--with-columns">
+              <div class="form-column">
+  
+                <div class="inner-page-emoji-title form-column__title">
+                  <img src="/img/emoji_mail.png" alt="emoji mail">
+                  <h3 class="inner-page-emoji-title__item">Почта</h3>
+                </div>
+  
+                <label for="email" class="form-control">
+                  Адрес
+                  <input type="email" class="input-field" placeholder="ivanov@gmail.com" id="email">
+                </label>
+  
+                <label for="password" class="form-control">
+                  Текущий пароль
+                  <input type="password" class="input-field" placeholder="*******" id="password">
+                </label>
+  
+                <label class="form-control">
+                  <button class="button edit-profile--button primary">Сохранить</button>
+                </label>
+  
+              </div>
+            </form>
+  
+            <form action="" class="form--with-columns">
+              <div class="form-column">
+  
+                <div class="inner-page-emoji-title form-column__title">
+                  <img src="/img/emoji_smile--cool.png" alt="emoji smile cool">
+                  <h3 class="inner-page-emoji-title__item">Фото профиля</h3>
+                </div>
+  
+                <div class="edit-profile__user-avatar">
+                  <img src="/img/inner-page-account-img.png" alt="User Avatar">
+                  <p>Текущее фото</p>
+                </div>
+  
+                <label class="form-control">
+                  <button class="button edit-profile--button access">Загрузить новое фото</button>
+                </label>
+  
+                <label class="form-control">
+                  <button class="button edit-profile--button danger">Удалить фото</button>
+                </label>
+  
+              </div>
+            </form>
+  
+          </div>
+  
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="overlay js-overlay-modal active"></div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/modal.js"></script>
+</body>
+
+</html>

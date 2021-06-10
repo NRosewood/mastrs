@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       modalElem.classList.add("active");
       overlay.classList.add("active");
       document.querySelector("body").classList.add("modal-show");
+      if (document.querySelector('.modal.edit-profile.active')) {
+        document.querySelector("body").classList.remove("modal-show");
+      }
     });
   });
 
