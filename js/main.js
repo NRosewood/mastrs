@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelector(".swipep-container")) {
+  if (document.querySelector(".swiper-container")) {
     const swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
       loop: true,
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bulletActiveClass: "active",
         bulletClass: "slider-dot",
         clickable: true,
-      },
+      }
     });
   }
 

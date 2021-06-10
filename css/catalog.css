@@ -1,1 +1,57 @@
 @import url('/css/main-styles.css');
+
+.catalog_cards .common-card {
+  height: 185px;
+  position: relative;
+}
+
+.catalog_cards .common-card--title {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.brands__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.brands__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 16px;
+  border: 1px solid #F6F7FA;
+  margin: 0 0 8px 8px;
+}
+
+@media (max-width: 768px) {
+  .brands__cards {
+    justify-content: center;
+  }
+}
+
+.catalog-actions-wrapper {
+  margin-top: 16px;
+  display: flex;
+}
+
+.catalog__search {
+  flex-basis: 608px;
+  padding: 20px 43px 30px;
+  margin-right: 22px;
+}
+
+
+
+
+
+
+.catalog__refer-link {
+  flex: 1 1 auto;
+  padding: 20px 43px 30px;
+}
