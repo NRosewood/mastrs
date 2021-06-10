@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelector(".swiper-container")) {
-    const swiper = new Swiper(".swiper-container", {
+  if (document.querySelector(".start-slider")) {
+    const swiper = new Swiper(".start-slider", {
       slidesPerView: 1,
       loop: true,
       pagination: {
@@ -114,6 +114,21 @@ document.addEventListener("DOMContentLoaded", () => {
   if (closeMobileMenuBtn) {
     closeMobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.remove('show');
+    });
+  }
+
+  /* slider brands in catalog page */
+
+  if (document.querySelector(".brands__cards--slider")) {
+    const swiper = new Swiper(".brands__cards--slider", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".slider-dots",
+        bulletActiveClass: "active",
+        bulletClass: "slider-dot",
+        clickable: true,
+      }
     });
   }
 

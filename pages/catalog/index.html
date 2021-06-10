@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/vendor/normalize.css">
+  <link rel="stylesheet" href="/css/vendor/swiper-bundle.min.css">
   <link rel="stylesheet" href="/css/catalog.css">
 </head>
 
@@ -127,12 +128,10 @@
             <div class="header__account">
 
               <div class="header-account__header">
-                <img class="header__account-img" src="/img/placeholder-account-icon.svg"
-                  alt="User img">
+                <img class="header__account-img" src="/img/placeholder-account-icon.svg" alt="User img">
 
                 <div class="mobile-account-modal-trigger js-open-modal" data-modal="user-account--modal">
-                  <img class="mobile-account-modal-trigger__img" src="/img/placeholder-account-icon.svg"
-                  alt="User img">
+                  <img class="mobile-account-modal-trigger__img" src="/img/placeholder-account-icon.svg" alt="User img">
                 </div>
 
                 <p class="header__account-name">Привет, Иван!</p>
@@ -161,7 +160,8 @@
 
                 </ul>
 
-                <button class="header-account__button button button--black js-open-modal" data-modal="logout--modal">Выход</button>
+                <button class="header-account__button button button--black js-open-modal"
+                  data-modal="logout--modal">Выход</button>
 
               </div>
               <div class="header__account--overlay"></div>
@@ -193,7 +193,7 @@
                 </div>
 
               </div>
-            
+
               <div class="catalog__refer-link inner-page__block">
 
                 <div class="inner-page-emoji-title">
@@ -202,7 +202,7 @@
                 </div>
 
               </div>
-            
+
             </div>
 
             <div class="inner-page__content">
@@ -233,7 +233,36 @@
                     </a>
                   </div>
 
-                  <div class="brands__cards--slider"></div>
+                  <div class="swiper-container brands__cards--slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a class="brands__card" href="#">
+                          <img src="/img/brand_img-1.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="brands__card" href="#">
+                          <img src="/img/brand_img-2.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="brands__card" href="#">
+                          <img src="/img/brand_img-3.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="brands__card" href="#">
+                          <img src="/img/brand_img-4.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="brands__card" href="#">
+                          <img src="/img/brand_img-5.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
 
                 </div>
               </div>
@@ -248,22 +277,19 @@
                   </div>
 
                   <div class="common-cards">
-                    <div class="common-card blue_light"
-                      style="background-image: url('/img/catalog-card-img-1.png');">
+                    <div class="common-card blue_light" style="background-image: url('/img/catalog-card-img-1.png');">
                       <a href="#" class="common-card--link">
                         <div class="common-card--title">Кремы</div>
                       </a>
                     </div>
 
-                    <div class="common-card green_darker"
-                      style="background-image: url('/img/catalog-card-img-2.png');">
+                    <div class="common-card green_darker" style="background-image: url('/img/catalog-card-img-2.png');">
                       <a href="#" class="common-card--link">
                         <div class="common-card--title">Маски <br> для лица</div>
                       </a>
                     </div>
 
-                    <div class="common-card yellow"
-                      style="background-image: url('/img/catalog-card-img-3.png');">
+                    <div class="common-card yellow" style="background-image: url('/img/catalog-card-img-3.png');">
                       <a href="#" class="common-card--link">
                         <div class="common-card--title">Пенки <br> для умывания</div>
                       </a>
@@ -303,7 +329,7 @@
     <div class="mobile-menu__body">
       <nav class="mobile-menu">
         <ul class="mobile-menu__list">
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -312,7 +338,7 @@
               Главная
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -321,16 +347,16 @@
               Аналитика
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
-                <img src="/img/menu_stat-icon.svg" alt="Stat icon">  
+                <img src="/img/menu_stat-icon.svg" alt="Stat icon">
               </div>
               Каталог
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -339,7 +365,7 @@
               Обучение
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -348,7 +374,7 @@
               Привлечение партнеров
             </a>
           </li>
-  
+
           <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">
               <div class="mobile-menu__icon">
@@ -357,7 +383,7 @@
               Помощь
             </a>
           </li>
-  
+
         </ul>
       </nav>
     </div>
@@ -388,7 +414,8 @@
         </li>
 
       </ul>
-      <button class="header-account__button button button--black js-open-modal" data-modal="logout--modal">Выход</button>
+      <button class="header-account__button button button--black js-open-modal"
+        data-modal="logout--modal">Выход</button>
     </div>
   </div>
 
