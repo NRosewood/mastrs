@@ -570,6 +570,10 @@ body {
   align-items: center;
 }
 
+.inner-page-emoji-title.centered {
+  justify-content: center;
+}
+
 .inner-page-emoji-title img {
   width: 22px;
   height: 22px;

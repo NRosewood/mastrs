@@ -18,6 +18,10 @@ body {
   background-color: #f0f5fb;
 }
 
+.main_logo {
+  max-width: 117px !important;
+}
+
 .start__img {
   display: block;
   margin: auto;
