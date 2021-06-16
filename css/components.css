@@ -103,6 +103,16 @@
   background-color: #DD6327;
 }
 
+.button--purple {
+  background-color: #874CFA;
+  border-radius: 16px;
+}
+
+.button--purple:hover,
+.button--purple:focus {
+  background-color: #7544D6;
+}
+
 .form-control {
   display: inline-flex;
   flex-direction: column;
