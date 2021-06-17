@@ -77,6 +77,7 @@
 
 .ac-panel {
   padding-left: 65px;
+  padding-right: 65px;
 }
 
 .ac.is-active .ac-title::after {
@@ -92,6 +93,33 @@
 
 .accordion__course {
   margin-top: 30px;
+}
+
+.accordion__course.aside {
+  margin-top: 0;
+}
+
+.accordion__course.aside .ac:first-child {
+  margin-top: 0;
+}
+
+.accordion__course.aside .ac-panel {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.accordion__course.aside .ac-list__link::after {
+  right: 16px;
+}
+
+.accordion__course.process {
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .accordion__course.process {
+    padding: 5px;
+  }
 }
 
 .accordion__course .ac {
@@ -130,6 +158,7 @@
 }
 
 .ac-list__link {
+  position: relative;
   text-decoration: none;
   display: block;
   padding: 12px 20px;
@@ -139,6 +168,25 @@
   border-radius: 5px;
 }
 
+.ac-list__link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 20px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid #ADBBD4;
+}
+
+.ac-list__link.finish::after {
+  background-color: #22C2A4;
+  border: 1px solid transparent;
+}
+
 .ac-list__link:hover {
   background-color: #F0F5FB;
 }
@@ -146,6 +194,7 @@
 @media (max-width: 768px) {
   .ac-panel {
     padding-left: 0;
+    padding-right: 0;
   }
   .ac.is-active .ac-title::after {
     display: none;

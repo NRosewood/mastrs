@@ -11,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/vendor/normalize.css">
   <link rel="stylesheet" href="/css/vendor/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/pages/partners/style.css">
+  <link rel="stylesheet" href="/css/vendor/accordion.min.css">
+  <link rel="stylesheet" href="/pages/process-course/lesson/style.css">
 </head>
 
 <body>
@@ -197,8 +198,8 @@
             <div class="inner-page__block partners">
 
               <div class="inner-page-emoji-title">
-                <img src="/img/emoji_money.png" alt="emoji money">
-                <h3 class="inner-page-emoji-title__item">Привлечение партнеров</h3>
+                <img src="/img/emoji_course.png" alt="emoji course">
+                <h3 class="inner-page-emoji-title__item">Название урока</h3>
               </div>
 
               <div class="two-columns-grid">
@@ -215,24 +216,87 @@
 
                 <div class="info-column">
                   
-                  <div class="partners__link orange">
-                    <div class="inner-page-emoji-title">
-                      <img src="/img/emoji_link.png" alt="emoji link">
-                      <h3 class="inner-page-emoji-title__item">Ссылка для клиентов</h3>
+                  <div class="accordion__course aside">
+                    <div class="ac">
+                      <div class="ac-header ac-trigger">
+                        <div class="ac-nubmer">1</div>
+                        <div class="ac-title">Вводная часть</div>
+                      </div>
+                      <div class="ac-panel">
+                        <ul class="ac-list">
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link finish">1.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">1.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">1.1 Название урока</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <input type="text" class="partners__input" value="https/mstrs.ru/id123/brands/s676766674574570845084" readonly>
-                    <button class="button button--orange partners__button">Копировать</button>
-                  </div>
-                  
-                  <div class="partners__link purple">
-
-                    <div class="inner-page-emoji-title">
-                      <img src="/img/emoji_link.png" alt="emoji link">
-                      <h3 class="inner-page-emoji-title__item">Ссылка для партнеров</h3>
+  
+                    <div class="ac">
+                      <div class="ac-header ac-trigger">
+                        <div class="ac-nubmer">2</div>
+                        <div class="ac-title">Название модуля</div>
+                      </div>
+                      <div class="ac-panel">
+                        <ul class="ac-list">
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">2.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">2.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">2.1 Название урока</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <input type="text" class="partners__input" value="https/mstrs.ru/id123/brands/s676766674574570845084" readonly>
-                    <button class="button button--purple partners__button">Копировать</button>
-
+  
+                    <div class="ac">
+                      <div class="ac-header ac-trigger">
+                        <div class="ac-nubmer">3</div>
+                        <div class="ac-title">Название модуля</div>
+                      </div>
+                      <div class="ac-panel">
+                        <ul class="ac-list">
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">3.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">3.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">3.1 Название урока</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+  
+                    <div class="ac">
+                      <div class="ac-header ac-trigger">
+                        <div class="ac-nubmer">4</div>
+                        <div class="ac-title">Название модуля</div>
+                      </div>
+                      <div class="ac-panel">
+                        <ul class="ac-list">
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">4.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">4.1 Название урока</a>
+                          </li>
+                          <li class="ac-list__item">
+                            <a href="#" class="ac-list__link">4.1 Название урока</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+  
                   </div>
 
                 </div>
@@ -368,6 +432,10 @@
   <div class="overlay js-overlay-modal"></div>
 
   <script src="/js/main.js"></script>
+  <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+  <script>
+    new Accordion('.accordion__course');
+  </script>
   <script src="/js/modal.js"></script>
 </body>
 
