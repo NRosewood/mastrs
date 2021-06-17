@@ -745,6 +745,40 @@ li.breadcrumb__item.with-icon a {
   }
 }
 
+.three-columns-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-column {
+  border-radius: 16px;
+}
+
+.grid-column.main-column {
+  display: block;
+  overflow: hidden;
+  background-color: #22C2A4;
+  flex-basis: 828px;
+  height: 393px;
+  margin-right: 16px;
+}
+
+.grid-column.secondary {
+  background-color: #fff;
+  flex: 1 1 auto;
+  width: 266px;
+}
+
+.grid-column.info {
+  margin-top: 16px;
+  background-color: #fff;
+  flex-basis: 100%;
+}
+
+.grid-column__cards-wrapper {
+  padding: 20px 24px;
+}
+
 .grid-card {
   height: 100%;
   display: flex;
@@ -769,7 +803,7 @@ li.breadcrumb__item.with-icon a {
 .grid-card__title {
   font-size: 38px;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 1.5;
 }
 
 .grid-card__subtitle {
@@ -796,4 +830,89 @@ li.breadcrumb__item.with-icon a {
 
 .grid-card-sec__text a {
   color: #2F80ED;
+}
+
+.grid-cards-last {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-card-last {
+  max-width: 293px;
+  width: 100%;
+  padding: 30px 47px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.grid-card-last__img {
+  margin-right: 16px;
+}
+
+.grid-card-last__title {
+  color: #7A7A9D;
+  font-weight: bold;
+}
+
+.grid-card-last__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 8px;
+  line-height: 136.52%;
+}
+
+@media (max-width: 1255px) {
+  .grid-column.main-column {
+    flex-basis: 100%;
+    margin-right: 0;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .grid-card__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-column.main-column {
+    background-color: transparent;
+  }
+
+  .grid-card {
+    flex-direction: column-reverse;
+  }
+
+  .grid-card__img {
+    background-color: #22C2A4;
+  }
+
+  .grid-card__text {
+    background-color: #fff;
+    padding: 30px 20px;
+  }
+
+  .grid-card__title {
+    font-size: 20px;
+  }
+
+  .grid-card__img img {
+    margin: auto;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .grid-card__button {
+    margin: 30px auto 0 auto;
+  }
+  .grid-card-last {
+    padding: 17px;
+  }
 }
