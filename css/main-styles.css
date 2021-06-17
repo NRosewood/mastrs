@@ -700,9 +700,14 @@ body {
 }
 
 .breadcrumb__item a {
+  text-decoration: none;
   font-size: 12px;
   line-height: 1.5;
   color: #7A7A9D;
+}
+
+.breadcrumb__item.active a {
+  text-decoration: underline;
 }
 
 .breadcrumb__item.with-icon a {
@@ -715,18 +720,16 @@ li.breadcrumb__item.with-icon a {
   align-items: center;
 }
 
-li.breadcrumb__item.with-icon a::before {
-  content: '';
-  display: block;
-  width: 12px;
-  height: 12px;
-  background-image: url('/img/home-icon--purple.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+.breadcrumb__link--icon {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb__icon {
   margin-right: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .breadcrumb {
     padding: 20px 10px;
   }
