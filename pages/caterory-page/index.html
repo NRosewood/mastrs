@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/vendor/normalize.css">
+  <link rel="stylesheet" href="/css/vendor/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/pages/caterory-page/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+      <nav class="sidebar__menu">
+
+        <a class="sidebar__link active" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_home-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Главная</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_chart-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Аналитика</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_stat-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Каталог</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_bookmark-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Обучение</p>
+        </a>
+
+        <a class="sidebar__link" href="#">
+          <div class="sidebar_icon">
+            <img class="" src="/img/menu_settings-icon.svg" alt="">
+          </div>
+          <p class="sidebar_text">Помощь</p>
+        </a>
+
+      </nav>
+      <button class="sidebar__toogle-menu">
+        <img src="/img/menu_arrow-icon.svg" class="sidebar__toogle-menu--icon">
+      </button>
+    </aside>
+
+    <div class="main-wrapper">
+      <div class="main">
+        <header class="header">
+
+          <img class="header__logo" src="/img/main-logo_black.svg" alt="Main Logo">
+          <div class="burger-menu">
+            <img src="/img/burger-icon.svg" alt="burger menu" class="burger-menu__icon">
+          </div>
+
+          <div class="header__content">
+
+            <div class="header__balance">
+              <img class="header__wallet-icon" src="/img/wallet-icon.svg" alt="wallet">
+              <p class="header-balance__text">Ваш баланс: <span class="header-balance__number">123 347 ₽</span></p>
+            </div>
+
+            <div class="header__notifications">
+              <div class="header-notifications__trigger"></div>
+              <div class="header-notifications__content">
+
+                <div class="header-notifications__header">
+                  <img src="/img/notification-icon.svg" alt="" class="header__notifications-icon content">
+                  <div class="header-notifications__title">Ваши уведомления</div>
+                  <div class="close-notifications"></div>
+                </div>
+
+                <div class="header-notifications-content__list">
+
+                  <a class="header-notifications-content-list__item" href="#">
+                    <div class="header-notifications-content-list__img">
+                      <img src="/img/stat-icon-purple.svg">
+                    </div>
+                    <div class="header-notifications-content-list__text">
+                      <strong>В каталоге</strong> появился новый бренд “Skin Ceuticals” с самыми выгодными условиями для
+                      партнеров
+                    </div>
+                  </a>
+
+                  <a class="header-notifications-content-list__item" href="#">
+                    <div class="header-notifications-content-list__img">
+                      <img src="/img/mail-icon.svg">
+                    </div>
+                    <div class="header-notifications-content-list__text">
+                      Вам необходимо <strong>подтвердить электронную почту</strong>
+                    </div>
+                  </a>
+
+                  <a class="header-notifications-content-list__item" href="#">
+                    <div class="header-notifications-content-list__img">
+                      <img src="/img/stat-icon-purple.svg">
+                    </div>
+                    <div class="header-notifications-content-list__text">
+                      <strong>В каталоге</strong> появился новый бренд “Skin Ceuticals” с самыми выгодными условиями для
+                      партнеров
+                    </div>
+                  </a>
+
+                </div>
+
+              </div>
+              <div class="header__notifications--overlay"></div>
+
+            </div>
+
+            <div class="header__account">
+
+              <div class="header-account__header">
+                <img class="header__account-img" src="/img/placeholder-account-icon.svg" alt="User img">
+
+                <div class="mobile-account-modal-trigger js-open-modal" data-modal="user-account--modal">
+                  <img class="mobile-account-modal-trigger__img" src="/img/placeholder-account-icon.svg" alt="User img">
+                </div>
+
+                <p class="header__account-name">Привет, Иван!</p>
+                <button class="header__account-dropdown-btn">
+                  <img class="header__account-dropdown-img" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                </button>
+              </div>
+
+              <div class="header-account__content">
+
+                <ul class="header-account-list">
+
+                  <li class="header-account-list__item">
+                    <a href="#" class="header-account-list__link">
+                      <img class="header-account-list__img" src="/img/profile-icon.svg" alt="profile icon">
+                      <p class="header-account-list__name">Профиль</p>
+                    </a>
+                  </li>
+
+                  <li class="header-account-list__item">
+                    <a href="#" class="header-account-list__link">
+                      <img class="header-account-list__img" src="/img/partners-icon.svg" alt="profile icon">
+                      <p class="header-account-list__name">Привлечение партнеров</p>
+                    </a>
+                  </li>
+
+                </ul>
+
+                <button class="header-account__button button button--black js-open-modal"
+                  data-modal="logout--modal">Выход</button>
+
+              </div>
+              <div class="header__account--overlay"></div>
+
+            </div>
+
+          </div>
+
+        </header>
+        <main class="category_page">
+          <div class="inner-container">
+
+            <div class="mobile__balance">
+              <img class="mobile__wallet-icon" src="/img/wallet-icon.svg" alt="wallet">
+              <p class="mobile-balance__text">Ваш баланс: <span class="mobile-balance__number">123 347 ₽</span></p>
+            </div>
+
+            <div class="inner-page-title empty_bg">
+              <h1>Сыворотки</h1>
+            </div>
+
+            <div class="inner-page__block">
+
+              <div class="inner-page-emoji-title">
+                <img src="/img/emoji_star.png" alt="emoji star">
+                <h3 class="inner-page-emoji-title__item">Поиск по категории</h3>
+              </div>
+
+              <div class="form-input-catalog with_icon">
+                <input type="text" class="form-input-catalog__input" placeholder="Введите поисковой запрос">
+                <button class="button form-input-catalog__button orange"><span>Поиск</span></button>
+              </div>
+
+            </div>
+
+            <div class="inner-page__block category_page--brands">
+              <div class="brands">
+
+                <div class="inner-page-emoji-title">
+                  <img src="/img/emoji_clever.png" alt="emoji clever">
+                  <h3 class="inner-page-emoji-title__item">Бренды</h3>
+                </div>
+
+                <div class="brands__cards">
+                  <a class="brands__card" href="#">
+                    <img src="/img/brand_img-1.png" alt="">
+                  </a>
+                  <a class="brands__card" href="#">
+                    <img src="/img/brand_img-2.png" alt="">
+                  </a>
+                  <a class="brands__card" href="#">
+                    <img src="/img/brand_img-3.png" alt="">
+                  </a>
+                  <a class="brands__card" href="#">
+                    <img src="/img/brand_img-4.png" alt="">
+                  </a>
+                  <a class="brands__card" href="#">
+                    <img src="/img/brand_img-5.png" alt="">
+                  </a>
+                </div>
+
+                <div class="swiper-container brands__cards--slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a class="brands__card" href="#">
+                        <img src="/img/brand_img-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="brands__card" href="#">
+                        <img src="/img/brand_img-2.png" alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="brands__card" href="#">
+                        <img src="/img/brand_img-3.png" alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="brands__card" href="#">
+                        <img src="/img/brand_img-4.png" alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="brands__card" href="#">
+                        <img src="/img/brand_img-5.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="slider-dots"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="inner-page__block category-page--catalog">
+
+              <div class="category-page__title">
+                <div class="inner-page-emoji-title">
+                  <img src="/img/emoji_rubin.png" alt="emoji emoji_rubin">
+                  <h3 class="inner-page-emoji-title__item">Бренды</h3>
+                </div>
+
+                <div class="link_horizontal">
+                  <div class="inner-page-emoji-title">
+                    <img src="/img/emoji_link.png" alt="emoji emoji_link">
+                    <h3 class="inner-page-emoji-title__item">Ссылка на страницу для клиентов</h3>
+                  </div>
+                  <div class="form-input-catalog">
+                    <input type="text" class="form-input-catalog__input copy-link"
+                      value="https/mstrs.ru/id123/brands/s2343243424324243243" readonly="">
+                    <button class="button form-input-catalog__button purple"></button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="catalog-list">
+
+                <a class="catalog-list__item" href="#">
+                  <img src="/img/catalog_item_1.jpg" class="catalog-list__img">
+                  <div class="catalog-list__item--content">
+                    <div class="catalog-list__title">SYLIMARIN CF</div>
+                    <div class="catalog-list__descr">Высокоэффективная антиоксидантная сыворотка</div>
+                    <div class="catalog-list__price">13 229 ₽</div>
+                  </div>
+                </a>
+
+                <a class="catalog-list__item" href="#">
+                  <img src="/img/catalog_item_2.jpg" class="catalog-list__img">
+                  <div class="catalog-list__item--content">
+                    <div class="catalog-list__title">SYLIMARIN CF</div>
+                    <div class="catalog-list__descr">Высокоэффективная антиоксидантная сыворотка</div>
+                    <div class="catalog-list__price">13 229 ₽</div>
+                  </div>
+                </a>
+
+                <a class="catalog-list__item" href="#">
+                  <img src="/img/catalog_item_3.jpg" class="catalog-list__img">
+                  <div class="catalog-list__item--content">
+                    <div class="catalog-list__title">SYLIMARIN CF</div>
+                    <div class="catalog-list__descr">Высокоэффективная антиоксидантная сыворотка</div>
+                    <div class="catalog-list__price">13 229 ₽</div>
+                  </div>
+                </a>
+
+                <a class="catalog-list__item" href="#">
+                  <img src="/img/catalog_item_4.jpg" class="catalog-list__img">
+                  <div class="catalog-list__item--content">
+                    <div class="catalog-list__title">SYLIMARIN CF</div>
+                    <div class="catalog-list__descr">Высокоэффективная антиоксидантная сыворотка</div>
+                    <div class="catalog-list__price">13 229 ₽</div>
+                  </div>
+                </a>
+
+                <a class="catalog-list__item" href="#">
+                  <img src="/img/catalog_item_5.jpg" class="catalog-list__img">
+                  <div class="catalog-list__item--content">
+                    <div class="catalog-list__title">SYLIMARIN CF</div>
+                    <div class="catalog-list__descr">Высокоэффективная антиоксидантная сыворотка</div>
+                    <div class="catalog-list__price">13 229 ₽</div>
+                  </div>
+                </a>
+
+                <a class="catalog-list__item" href="#">
+                  <img src="/img/catalog_item_6.jpg" class="catalog-list__img">
+                  <div class="catalog-list__item--content">
+                    <div class="catalog-list__title">SYLIMARIN CF</div>
+                    <div class="catalog-list__descr">Высокоэффективная антиоксидантная сыворотка</div>
+                    <div class="catalog-list__price">13 229 ₽</div>
+                  </div>
+                </a>
+
+                <a class="catalog-list__item" href="#">
+                  <img src="/img/catalog_item_7.jpg" class="catalog-list__img">
+                  <div class="catalog-list__item--content">
+                    <div class="catalog-list__title">SYLIMARIN CF</div>
+                    <div class="catalog-list__descr">Высокоэффективная антиоксидантная сыворотка</div>
+                    <div class="catalog-list__price">13 229 ₽</div>
+                  </div>
+                </a>
+
+              </div>
+
+              <div class="catalog__pagination">
+                <div class="catalog-pagination-btn catalog-pagination__prev"></div>
+                <div class="catalog-pagination-btn catalog-pagination__next active"></div>
+              </div>
+
+            </div>
+
+          </div>
+
+      </div>
+      </main>
+    </div>
+  </div>
+
+
+  <!-- Mobile menu -->
+
+  <div class="mobile-menu-wrapper">
+
+    <div class="mobile-menu__header">
+      <div class="mobile-menu__close-icon"></div>
+      <div class="mobile-menu__logo">
+        <img src="/img/logo-mobile.svg" alt="Logo">
+      </div>
+    </div>
+
+    <div class="mobile-menu__body">
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__list">
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_home-icon.svg" alt="Home icon">
+              </div>
+              Главная
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_chart-icon.svg" alt="Chart icon">
+              </div>
+              Аналитика
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_stat-icon.svg" alt="Stat icon">
+              </div>
+              Каталог
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_bookmark-icon.svg" alt="Bookmark icon">
+              </div>
+              Обучение
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_partners-icon.svg" alt="Partners icon">
+              </div>
+              Привлечение партнеров
+            </a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <div class="mobile-menu__icon">
+                <img src="/img/menu_settings-icon.svg" alt="Partners icon">
+              </div>
+              Помощь
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+
+  <!-- modals-->
+
+  <div class="modal" data-modal="user-account--modal">
+    <div class="js-modal-close"></div>
+    <div class="user-account">
+      <div class="user-account__title">Привет, Иван!</div>
+      <ul class="user-account__list">
+
+        <li class="user-account__item">
+          <a class="user-account__link" href="#">
+            <img class="user-account-item__image" src="/img/profile-icon.svg">
+            <div class="user-account-item__text">Профиль</div>
+          </a>
+        </li>
+
+        <li class="user-account__item">
+          <a class="user-account__link" href="#">
+            <img class="user-account-item__image" src="/img/partners-icon.svg">
+            <div class="user-account-item__text">Привлечение партнеров</div>
+          </a>
+        </li>
+
+      </ul>
+      <button class="header-account__button button button--black js-open-modal"
+        data-modal="logout--modal">Выход</button>
+    </div>
+  </div>
+
+  <div class="modal" data-modal="logout--modal">
+    <div class="js-modal-close"></div>
+    <div class="logout-modal">
+      <img src="/img/logout-modal-img.svg">
+      <div class="logout-modal__title">Вы хотите выйти из профиля?</div>
+      <div class="logout-modal__buttons">
+        <button class="button button--black logout-modal__button">Да</button>
+        <button class="button button--orange logout-modal__button">Нет</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay js-overlay-modal"></div>
+
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/modal.js"></script>
+</body>
+
+</html>

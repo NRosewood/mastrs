@@ -1,0 +1,29 @@
+@import url('/css/main-styles.css');
+
+.category_page--brands {
+  margin-top: 16px;
+}
+
+.category-page__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-page__block.category-page--catalog {
+  margin-top: 16px;
+}
+
+.category_page .category-page--catalog {
+  padding: 30px;
+}
+
+@media (max-width: 991px) {
+  .category-page__title {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .category_page .link_horizontal {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}

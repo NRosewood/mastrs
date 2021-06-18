@@ -530,6 +530,10 @@ body {
   border-radius: 20px;
 }
 
+.inner-page-title.empty_bg {
+  background-color: transparent;
+}
+
 .inner-page-title h1 {
   font-size: 38px;
   font-weight: 700;
@@ -559,6 +563,16 @@ body {
 .inner-page__block {
   background-color: #fff;
   border-radius: 16px;
+}
+
+.category_page .inner-page__block {
+  padding: 30px 50px;
+}
+
+@media (max-width: 991px) {
+  .category_page .inner-page__block {
+    padding: 14px 30px;
+  }
 }
 
 .progress-block {
@@ -711,6 +725,10 @@ body {
 
 .form-input-catalog.with_icon {
   position: relative;
+}
+
+.category_page .form-input-catalog.with_icon {
+  max-width: 100%;
 }
 
 .form-input-catalog.with_icon input {
@@ -1298,10 +1316,96 @@ li.breadcrumb__item.with-icon a {
     flex-direction: column;
     padding: 14px 12px;
   }
+
   .link_horizontal .inner-page-emoji-title__item {
     max-width: 100%;
   }
+
   .link_horizontal .form-input-catalog {
     margin-top: 10px;
+  }
+}
+
+.catalog_cards .common-card {
+  height: 185px;
+  position: relative;
+}
+
+.catalog_cards .common-card--title {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.brands__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.brands__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 16px;
+  border: 1px solid #F6F7FA;
+  margin: 0 0 8px 8px;
+}
+
+.brands__cards--slider {
+  display: none;
+  margin-top: 20px;
+  max-width: 285px;
+  height: 150px;
+}
+
+.brands__cards--slider .brands__card {
+  margin: 0;
+}
+
+.brands__cards--slider .swiper-slide {
+  width: 104px;
+  height: 104px;
+}
+
+@media (max-width: 768px) {
+  .inner-page__left {
+    flex-basis: auto;
+  }
+
+  .brands__cards--slider {
+    display: block;
+    max-width: 100%;
+  }
+
+  .brands__cards {
+    display: none;
+  }
+
+  .brands__cards {
+    justify-content: center;
+  }
+}
+
+.catalog-actions-wrapper {
+  margin-top: 16px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .catalog-actions-wrapper {
+    flex-direction: column;
+  }
+
+  .catalog__search {
+    margin-right: 0;
+    flex-basis: auto;
+  }
+
+  .catalog__refer-link {
+    margin-top: 16px;
   }
 }
