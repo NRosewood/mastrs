@@ -1208,7 +1208,8 @@ li.breadcrumb__item.with-icon a {
 }
 
 .catalog-list__img {
-  margin-top: 16px;
+  display: block;
+  margin: 16px auto 0;
 }
 
 .catalog-list__item:hover {
