@@ -1,0 +1,9 @@
+@import url('/css/main-styles.css');
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}
