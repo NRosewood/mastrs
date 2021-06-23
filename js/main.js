@@ -30,22 +30,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const passwordFields = document.querySelectorAll(".password-field");
-  const passwordCheckButtons = document.querySelectorAll('.password-control');
+  const passwordCheckButtons = document.querySelectorAll(".password-control");
 
   if (passwordFields) {
     passwordFields.forEach((item) => {
       if (passwordCheckButton) {
-        passwordCheckButtons.forEach(button => {
+        passwordCheckButtons.forEach((button) => {
           button.addEventListener("click", (e) => {
             e.preventDefault();
-  
+
             if (item.getAttribute("type") === "password") {
               item.setAttribute("type", "text");
             } else {
               item.setAttribute("type", "password");
             }
           });
-        })
+        });
       }
     });
   }
@@ -183,4 +183,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  /* dropdown table */
+
+  
+
 });
