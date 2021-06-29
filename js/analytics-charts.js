@@ -78,7 +78,7 @@ function drawChart(root, rows) {
     }
   };
 
-  window.chart = new google.visualization.ColumnChart(root);
+  let chart = new google.visualization.ColumnChart(root);
   chart.draw(data, options);
 }
 

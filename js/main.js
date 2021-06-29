@@ -166,7 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (document.querySelector(".analytics_level__cards--slider")) {
         if (window.matchMedia('(max-width: 768px)')) {
-          console.log('happened?')
           swiper = new Swiper(".analytics_level__cards--slider", {
             slidesPerView: "auto",
             spaceBetween: 10,
