@@ -54,7 +54,7 @@
 }
 
 .edit-profile-block {
-  padding: 32px 67px;
+  padding: 32px 50px;
   margin-top: 30px;
 }
 
@@ -286,8 +286,6 @@
   line-height: 1.5;
 }
 
-
-
 @media (max-width: 768px) {
   .edit-profile-block {
     padding: 32px 25px;
@@ -330,4 +328,8 @@
 
 .tabs__pane_show {
   display: block;
+}
+
+form.upload-files {
+  justify-content: center;
 }

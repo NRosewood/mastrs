@@ -113,6 +113,11 @@
   background-color: #7544D6;
 }
 
+.button--light-blue {
+  background-color: #E1E8FF;
+  color: #4C6FFF;
+}
+
 .form-control {
   display: inline-flex;
   flex-direction: column;

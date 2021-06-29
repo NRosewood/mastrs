@@ -159,6 +159,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  /* slider cards in analytics page */
+  (function() {
+    const initializeSliderOrDestroy = (instance) => {
+      let swiper = instance || undefined;
+
+      if (document.querySelector(".analytics_level__cards--slider")) {
+        if (window.matchMedia('(max-width: 768px)')) {
+          console.log('happened?')
+          swiper = new Swiper(".analytics_level__cards--slider", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            loop: false,
+            pagination: {
+              el: ".slider-dots",
+              bulletActiveClass: "active",
+              bulletClass: "slider-dot",
+              clickable: true,
+            }
+          });
+        } else {
+          swiper && swiper.destroy(true, true);
+        }
+      }
+
+      return swiper;
+    }
+
+    let analyticsLevelCardsSlider = initializeSliderOrDestroy();
+    window.addEventListener('resize', initializeSliderOrDestroy(analyticsLevelCardsSlider));
+  })();
+
   /* dropdown edit profile */
 
   const editProfileDropdownTrigger = document.querySelector(

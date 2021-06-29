@@ -224,6 +224,8 @@
                       <div class="analytics_graph-table-week-summary__info">за неделю</div>
                     </div>
                   </div>
+
+                  <div class="analytics_graph-table__chart"></div>
                 </div>
               </div>
             </div>
@@ -444,197 +446,226 @@
                     <div class="medal-img"></div>
                   </div>
                 </div>
-                <div class="inner-page-emoji-title">
-                  <img src="/img/emoji_arrow-down.png" alt="emoji arrow down">
-                  <h3 class="inner-page-emoji-title__item">Результаты</h3>
-                </div>
-                <div class="analytics_level__cards">
-                  <div class="analytics_level__card">
-                    <div class="analytics_level-card__title">Вы привели</div>
-                    <div class="analytics_level-card__subtitle">11 партнеров</div>
+                <div class="analytics_level__content-wrap">
+                  <div class="inner-page-emoji-title">
+                    <img src="/img/emoji_arrow-down.png" alt="emoji arrow down">
+                    <h3 class="inner-page-emoji-title__item">Результаты</h3>
                   </div>
-                  <div class="analytics_level__card">
-                    <div class="analytics_level-card__title">которые заработали вам</div>
-                    <div class="analytics_level-card__subtitle">112 234₽</div>
-                  </div>
-                  <div class="analytics_level__card">
-                    <div class="analytics_level-card__title">общая сумма продаж</div>
-                    <div class="analytics_level-card__subtitle">546 123₽</div>
-                  </div>
-                </div>
-                <div class="analytics_graph__table-new orange">
-                  <div class="graph-table-new__head">
-                    <div class="inner-page-emoji-title">
-                      <img src="/img/emoji_money_bag.png" alt="emoji money_bag">
-                      <h3 class="inner-page-emoji-title__item">Покупки</h3>
+                  <div class="analytics_level__cards">
+                    <div class="analytics_level__card">
+                      <div class="analytics_level-card__title">Вы привели</div>
+                      <div class="analytics_level-card__subtitle">11 партнеров</div>
                     </div>
-                    <div class="analytics_graph-table__dropdowns">
-
-                      <select class="analytics_graph-table__dropdown gray">
-                        <option>Неделя</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
-
-                      <select class="analytics_graph-table__dropdown gray">
-                        <option>03.05.21-09.05.21</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
-
+                    <div class="analytics_level__card">
+                      <div class="analytics_level-card__title">которые заработали вам</div>
+                      <div class="analytics_level-card__subtitle">112 234₽</div>
+                    </div>
+                    <div class="analytics_level__card">
+                      <div class="analytics_level-card__title">общая сумма продаж</div>
+                      <div class="analytics_level-card__subtitle">546 123₽</div>
                     </div>
                   </div>
-                  <table class="graph-table-new__item">
-                    <tbody>
-                      <tr class="table_head">
-                        <td>№</td>
-                        <td>Клиент</td>
-                        <td>Кол-во заказов</td>
-                        <td>Сумма продаж</td>
-                        <td>Ваше вознаграждение</td>
-                      </tr>
-                      <tr class="table_item">
-                        <td>1.</td>
-                        <td class="table-avatar-wrapper">
-                          <div class="table-avatar">
-                            <img src="/img/review-img.png">
-                          </div>
-                          Анна Золотова
-                        </td>
-                        <td>40 шт.</td>
-                        <td>4 586₽</td>
-                        <td>4 586₽</td>
-                      </tr>
-                      <tr class="table_item">
-                        <td>2.</td>
-                        <td class="table-avatar-wrapper">
-                          <div class="table-avatar">
-                            <img src="/img/review-img.png">
-                          </div>
-                          Анна Золотова
-                        </td>
-                        <td>28 шт.</td>
-                        <td>96 600₽</td>
-                        <td>4 586₽</td>
-                      </tr>
-                      <tr class="table_item">
-                        <td>3.</td>
-                        <td class="table-avatar-wrapper">
-                          <div class="table-avatar">
-                            <img src="/img/review-img.png">
-                          </div>
-                          Кристина
-                        </td>
-                        <td>28 шт.</td>
-                        <td>96 600₽</td>
-                        <td>4 586₽</td>
-                      </tr>
-                    </tbody>
-                  </table>
 
-                  <button class="button table_more_btn table_more_btn--white">
-                    <span>Показать все заказы</span>
-                    <div class="dropdown-icon"></div>
-                  </button>
-                </div>
-                <div class="analytics_graph__table-new--mobile">
-
-                  <div class="dropdown-table">
-
-                    <div class="dropdown-table__header">
-                      <div class="dropdown-table__number">№ 1</div>
-                      <div class="table-avatar-wrapper">
-                        <div class="table-avatar">
-                          <img src="/img/review-img.png">
+                  
+                  <div class="swiper-container analytics_level__cards--slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="analytics_level__card">
+                          <div class="analytics_level-card__title">Вы привели</div>
+                          <div class="analytics_level-card__subtitle">11 партнеров</div>
                         </div>
-                        Анна Золотова
                       </div>
-                      <div class="dropdown-table__icon">
-                        <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
-                      </div>
-                    </div>
-
-                    <div class="dropdown-table__content">
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
-                        <div class="dropdown-table__content-card__value">40 шт.</div>
-                      </div>
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Сумма продаж:</div>
-                        <div class="dropdown-table__content-card__value">4 586₽</div>
-                      </div>
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Вознаграждение</div>
-                        <div class="dropdown-table__content-card__value">4 586₽</div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="dropdown-table">
-
-                    <div class="dropdown-table__header">
-                      <div class="dropdown-table__number">№ 1</div>
-                      <div class="table-avatar-wrapper">
-                        <div class="table-avatar">
-                          <img src="/img/review-img.png">
+                      <div class="swiper-slide">
+                        <div class="analytics_level__card">
+                          <div class="analytics_level-card__title">которые заработали вам</div>
+                          <div class="analytics_level-card__subtitle">112 234₽</div>
                         </div>
-                        Анна Золотова
                       </div>
-                      <div class="dropdown-table__icon">
-                        <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
-                      </div>
-                    </div>
-
-                    <div class="dropdown-table__content">
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
-                        <div class="dropdown-table__content-card__value">40 шт.</div>
-                      </div>
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Сумма продаж:</div>
-                        <div class="dropdown-table__content-card__value">4 586₽</div>
-                      </div>
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Вознаграждение</div>
-                        <div class="dropdown-table__content-card__value">4 586₽</div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="dropdown-table">
-
-                    <div class="dropdown-table__header">
-                      <div class="dropdown-table__number">№ 1</div>
-                      <div class="table-avatar-wrapper">
-                        <div class="table-avatar">
-                          <img src="/img/review-img.png">
+                      <div class="swiper-slide">
+                        <div class="analytics_level__card">
+                          <div class="analytics_level-card__title">общая сумма продаж</div>
+                          <div class="analytics_level-card__subtitle">546 123₽</div>
                         </div>
-                        Анна Золотова
-                      </div>
-                      <div class="dropdown-table__icon">
-                        <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
                       </div>
                     </div>
-
-                    <div class="dropdown-table__content">
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
-                        <div class="dropdown-table__content-card__value">40 шт.</div>
-                      </div>
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Сумма продаж:</div>
-                        <div class="dropdown-table__content-card__value">4 586₽</div>
-                      </div>
-                      <div class="dropdown-table__content--card">
-                        <div class="dropdown-table__content-card__title">Вознаграждение</div>
-                        <div class="dropdown-table__content-card__value">4 586₽</div>
-                      </div>
-                    </div>
-
+                    <div class="slider-dots"></div>
                   </div>
 
+                  <div class="analytics_graph__table-new orange">
+                    <div class="graph-table-new__head">
+                      <div class="inner-page-emoji-title">
+                        <img src="/img/emoji_money_bag.png" alt="emoji money_bag">
+                        <h3 class="inner-page-emoji-title__item">Рейтинг партнеров</h3>
+                      </div>
+                      <div class="analytics_graph-table__dropdowns">
+
+                        <select class="analytics_graph-table__dropdown gray">
+                          <option>Неделя</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                        </select>
+
+                        <select class="analytics_graph-table__dropdown gray">
+                          <option>03.05.21-09.05.21</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                        </select>
+
+                      </div>
+                    </div>
+                    <table class="graph-table-new__item">
+                      <tbody>
+                        <tr class="table_head">
+                          <td>№</td>
+                          <td>Клиент</td>
+                          <td>Кол-во заказов</td>
+                          <td>Сумма продаж</td>
+                          <td>Ваше вознаграждение</td>
+                        </tr>
+                        <tr class="table_item">
+                          <td>1.</td>
+                          <td class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </td>
+                          <td>40 шт.</td>
+                          <td>4 586₽</td>
+                          <td>4 586₽</td>
+                        </tr>
+                        <tr class="table_item">
+                          <td>2.</td>
+                          <td class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </td>
+                          <td>28 шт.</td>
+                          <td>96 600₽</td>
+                          <td>4 586₽</td>
+                        </tr>
+                        <tr class="table_item">
+                          <td>3.</td>
+                          <td class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Кристина
+                          </td>
+                          <td>28 шт.</td>
+                          <td>96 600₽</td>
+                          <td>4 586₽</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="analytics_graph__table-new--mobile">
+
+                      <div class="ac dropdown-table">
+  
+                        <div class="ac-header dropdown-table__header">
+                          <div class="dropdown-table__number">№ 1</div>
+                          <div class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </div>
+                          <div class="ac-trigger dropdown-table__icon">
+                            <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                          </div>
+                        </div>
+  
+                        <div class="ac-panel dropdown-table__content">
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
+                            <div class="dropdown-table__content-card__value">40 шт.</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Сумма продаж:</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Вознаграждение</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <div class="ac dropdown-table">
+  
+                        <div class="ac-heder dropdown-table__header">
+                          <div class="dropdown-table__number">№ 1</div>
+                          <div class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </div>
+                          <div class="ac-trigger dropdown-table__icon">
+                            <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                          </div>
+                        </div>
+  
+                        <div class="ac-panel dropdown-table__content">
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
+                            <div class="dropdown-table__content-card__value">40 шт.</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Сумма продаж:</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Вознаграждение</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <div class="ac dropdown-table">
+  
+                        <div class="ac-header dropdown-table__header">
+                          <div class="dropdown-table__number">№ 1</div>
+                          <div class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </div>
+                          <div class="ac-trigger dropdown-table__icon">
+                            <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                          </div>
+                        </div>
+  
+                        <div class="ac-panel dropdown-table__content">
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
+                            <div class="dropdown-table__content-card__value">40 шт.</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Сумма продаж:</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Вознаграждение</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                    </div>
+
+                    <button class="button table_more_btn table_more_btn--white">
+                      <span>Показать все заказы</span>
+                      <div class="dropdown-icon"></div>
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -647,98 +678,224 @@
                     <div class="medal-img"></div>
                   </div>
                 </div>
-                <div class="inner-page-emoji-title">
-                  <img src="/img/emoji_arrow-down.png" alt="emoji arrow down">
-                  <h3 class="inner-page-emoji-title__item">Результаты</h3>
-                </div>
-                <div class="analytics_level__cards">
-                  <div class="analytics_level__card">
-                    <div class="analytics_level-card__title">Ваши партнеры привели</div>
-                    <div class="analytics_level-card__subtitle">24 партнера</div>
+                <div class="analytics_level__content-wrap">
+                  <div class="inner-page-emoji-title">
+                    <img src="/img/emoji_arrow-down.png" alt="emoji arrow down">
+                    <h3 class="inner-page-emoji-title__item">Результаты</h3>
                   </div>
-                  <div class="analytics_level__card">
-                    <div class="analytics_level-card__title">которые заработали вам</div>
-                    <div class="analytics_level-card__subtitle">213 345₽</div>
-                  </div>
-                  <div class="analytics_level__card">
-                    <div class="analytics_level-card__title">общая сумма продаж</div>
-                    <div class="analytics_level-card__subtitle">577 123₽</div>
-                  </div>
-                </div>
-                <div class="analytics_graph__table-new purple">
-                  <div class="graph-table-new__head">
-                    <div class="inner-page-emoji-title">
-                      <img src="/img/emoji_money_bag.png" alt="emoji money_bag">
-                      <h3 class="inner-page-emoji-title__item">Покупки</h3>
+                  <div class="analytics_level__cards">
+                    <div class="analytics_level__card">
+                      <div class="analytics_level-card__title">Ваши партнеры привели</div>
+                      <div class="analytics_level-card__subtitle">24 партнера</div>
                     </div>
-                    <div class="analytics_graph-table__dropdowns">
-
-                      <select class="analytics_graph-table__dropdown gray">
-                        <option>Неделя</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
-
-                      <select class="analytics_graph-table__dropdown gray">
-                        <option>03.05.21-09.05.21</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
-
+                    <div class="analytics_level__card">
+                      <div class="analytics_level-card__title">которые заработали вам</div>
+                      <div class="analytics_level-card__subtitle">213 345₽</div>
+                    </div>
+                    <div class="analytics_level__card">
+                      <div class="analytics_level-card__title">общая сумма продаж</div>
+                      <div class="analytics_level-card__subtitle">577 123₽</div>
                     </div>
                   </div>
-                  <table class="graph-table-new__item">
-                    <tbody>
-                      <tr class="table_head">
-                        <td>№</td>
-                        <td>Клиент</td>
-                        <td>Кол-во заказов</td>
-                        <td>Сумма продаж</td>
-                        <td>Ваше вознаграждение</td>
-                      </tr>
-                      <tr class="table_item">
-                        <td>1.</td>
-                        <td class="table-avatar-wrapper">
-                          <div class="table-avatar">
-                            <img src="/img/review-img.png">
-                          </div>
-                          Анна Золотова
-                        </td>
-                        <td>40 шт.</td>
-                        <td>4 586₽</td>
-                        <td>4 586₽</td>
-                      </tr>
-                      <tr class="table_item">
-                        <td>2.</td>
-                        <td class="table-avatar-wrapper">
-                          <div class="table-avatar">
-                            <img src="/img/review-img.png">
-                          </div>
-                          Анна Золотова
-                        </td>
-                        <td>28 шт.</td>
-                        <td>96 600₽</td>
-                        <td>4 586₽</td>
-                      </tr>
-                      <tr class="table_item">
-                        <td>3.</td>
-                        <td class="table-avatar-wrapper">
-                          <div class="table-avatar">
-                            <img src="/img/review-img.png">
-                          </div>
-                          Кристина
-                        </td>
-                        <td>28 шт.</td>
-                        <td>96 600₽</td>
-                        <td>4 586₽</td>
-                      </tr>
-                    </tbody>
-                  </table>
 
-                  <button class="button table_more_btn table_more_btn--white">
-                    <span>Показать все заказы</span>
-                    <div class="dropdown-icon"></div>
-                  </button>
+                  <div class="swiper-container analytics_level__cards--slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="analytics_level__card">
+                          <div class="analytics_level-card__title">Ваши партнеры привели</div>
+                          <div class="analytics_level-card__subtitle">24 партнера</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="analytics_level__card">
+                          <div class="analytics_level-card__title">которые заработали вам</div>
+                          <div class="analytics_level-card__subtitle">213 345₽</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="analytics_level__card">
+                          <div class="analytics_level-card__title">общая сумма продаж</div>
+                          <div class="analytics_level-card__subtitle">577 123₽</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-dots"></div>
+                  </div>
+
+                  <div class="analytics_graph__table-new purple">
+                    <div class="graph-table-new__head">
+                      <div class="inner-page-emoji-title">
+                        <img src="/img/emoji_money_bag.png" alt="emoji money_bag">
+                        <h3 class="inner-page-emoji-title__item">Рейтинг партнеров</h3>
+                      </div>
+                      <div class="analytics_graph-table__dropdowns">
+
+                        <select class="analytics_graph-table__dropdown gray">
+                          <option>Неделя</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                        </select>
+
+                        <select class="analytics_graph-table__dropdown gray">
+                          <option>03.05.21-09.05.21</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                        </select>
+
+                      </div>
+                    </div>
+                    <table class="graph-table-new__item">
+                      <tbody>
+                        <tr class="table_head">
+                          <td>№</td>
+                          <td>Клиент</td>
+                          <td>Кол-во заказов</td>
+                          <td>Сумма продаж</td>
+                          <td>Ваше вознаграждение</td>
+                        </tr>
+                        <tr class="table_item">
+                          <td>1.</td>
+                          <td class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </td>
+                          <td>40 шт.</td>
+                          <td>4 586₽</td>
+                          <td>4 586₽</td>
+                        </tr>
+                        <tr class="table_item">
+                          <td>2.</td>
+                          <td class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </td>
+                          <td>28 шт.</td>
+                          <td>96 600₽</td>
+                          <td>4 586₽</td>
+                        </tr>
+                        <tr class="table_item">
+                          <td>3.</td>
+                          <td class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Кристина
+                          </td>
+                          <td>28 шт.</td>
+                          <td>96 600₽</td>
+                          <td>4 586₽</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="analytics_graph__table-new--mobile">
+
+                      <div class="ac dropdown-table">
+  
+                        <div class="ac-header dropdown-table__header">
+                          <div class="dropdown-table__number">№ 1</div>
+                          <div class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </div>
+                          <div class="ac-trigger dropdown-table__icon">
+                            <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                          </div>
+                        </div>
+  
+                        <div class="ac-panel dropdown-table__content">
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
+                            <div class="dropdown-table__content-card__value">40 шт.</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Сумма продаж:</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Вознаграждение</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <div class="ac dropdown-table">
+  
+                        <div class="ac-heder dropdown-table__header">
+                          <div class="dropdown-table__number">№ 1</div>
+                          <div class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </div>
+                          <div class="ac-trigger dropdown-table__icon">
+                            <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                          </div>
+                        </div>
+  
+                        <div class="ac-panel dropdown-table__content">
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
+                            <div class="dropdown-table__content-card__value">40 шт.</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Сумма продаж:</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Вознаграждение</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <div class="ac dropdown-table">
+  
+                        <div class="ac-header dropdown-table__header">
+                          <div class="dropdown-table__number">№ 1</div>
+                          <div class="table-avatar-wrapper">
+                            <div class="table-avatar">
+                              <img src="/img/review-img.png">
+                            </div>
+                            Анна Золотова
+                          </div>
+                          <div class="ac-trigger dropdown-table__icon">
+                            <img class="table-dropdown-icon" src="/img/header_dropdown-icon.svg" alt="Dropdown img">
+                          </div>
+                        </div>
+  
+                        <div class="ac-panel dropdown-table__content">
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Кол-во заказов:</div>
+                            <div class="dropdown-table__content-card__value">40 шт.</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Сумма продаж:</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                          <div class="dropdown-table__content--card">
+                            <div class="dropdown-table__content-card__title">Вознаграждение</div>
+                            <div class="dropdown-table__content-card__value">4 586₽</div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                    </div>
+
+                    <button class="button table_more_btn table_more_btn--white">
+                      <span>Показать все заказы</span>
+                      <div class="dropdown-icon"></div>
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -871,7 +1028,15 @@
   <div class="overlay js-overlay-modal"></div>
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
+  <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+  <script>
+    document
+      .querySelectorAll('.analytics_graph__table-new--mobile')
+      .forEach(function(accordionWrap) {
+        new Accordion(accordionWrap, { showMultiple: true });
+      });
+  </script>
+  <script src="/js/analytics-charts.js"></script>
   <script src="/js/swiper-bundle.min.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/modal.js"></script>
