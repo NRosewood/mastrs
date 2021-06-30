@@ -125,6 +125,15 @@
 
             </div>
 
+            <a href="#" class="header__cart">
+              <div class="header__cart-icon">
+                <img src="/img/shopping-cart--icon.svg" alt="">
+              </div>
+              <div class="header__cart-products">
+                6
+              </div>
+            </a>
+
             <div class="header__account">
 
               <div class="header-account__header">
@@ -176,7 +185,7 @@
 
             <div class="mobile__balance">
               <img class="mobile__wallet-icon" src="/img/wallet-icon.svg" alt="wallet">
-              <p class="mobile-balance__text">Ваш баланс: <span class="mobile-balance__number">123 347 <div class="rouble">₽</div></span></p>
+              <p class="mobile-balance__text">Ваш баланс: <span class="mobile-balance__number">123 347 ₽</span></p>
             </div>
 
             <div class="inner-page-title">
@@ -213,7 +222,7 @@
                         </button>
                       </div>
                       <div class="cart__product-cost">
-                        3 456  <div class="rouble">₽</div>
+                        1 000  <div class="rouble">₽</div>
                         <span>12 шт. - 12 000 <div class="rouble">₽</div></span>
                       </div>
                     </div>
@@ -334,7 +343,49 @@
                   </div>
                 </div>
 
-                <button class="button button--purple js-open-modal" data-modal="cart--modal">Оформить заказ</button>
+                <div class="cart__order-results_qr">
+                  <div class="inner-page-emoji-title">
+                    <img src="/img/emoji_phone.png" alt="emoji phone">
+                    <h3 class="inner-page-emoji-title__item">QR code заказа:</h3>
+                  </div>
+
+                  <div class="cart-modal__qr-image">
+                    <img src="/img/qr-code.jpg" alt="">
+                  </div>
+                  
+                  <div class="cart-modal__links">
+                    <a href="#" class="cart-modal__link">
+                      <span class="cart-modal__link-icon">
+                        <img src="/img/whatsapp--icon.svg" alt="">
+                      </span>
+                      <span class="cart-modal__link-title">WhatsApp</span>
+                    </a>
+          
+                    <a href="#" class="cart-modal__link">
+                      <span class="cart-modal__link-icon">
+                        <img src="/img/viber--icon.svg" alt="">
+                      </span>
+                      <span class="cart-modal__link-title">Viber</span>
+                    </a>
+          
+                    <a href="#" class="cart-modal__link">
+                      <span class="cart-modal__link-icon">
+                        <img src="/img/telegram--icon.svg" alt="">
+                      </span>
+                      <span class="cart-modal__link-title">Telegram</span>
+                    </a>
+          
+                    <div class="cart-modal__link js-copy" data-to-copy="">
+                      <div class="cart-modal__link-icon">
+                        <img src="/img/copy-link--icon.svg" alt="">
+                      </div>
+                      <div class="cart-modal__link-title">Ссылка</div>
+                    </div>
+                  </div>
+  
+                </div>
+
+                <button class="button button--purple js-open-modal cart__order-button" data-modal="cart--modal">Оформить заказ</button>
               </div>
             </div>
           </div>
