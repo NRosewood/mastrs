@@ -334,7 +334,7 @@
                   </div>
                 </div>
 
-                <button class="button button--purple">Оформить заказ</button>
+                <button class="button button--purple js-open-modal" data-modal="cart--modal">Оформить заказ</button>
               </div>
             </div>
           </div>
@@ -457,6 +457,70 @@
       <div class="logout-modal__buttons">
         <button class="button button--black logout-modal__button">Да</button>
         <button class="button button--orange logout-modal__button">Нет</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--wide modal--cart" data-modal="cart--modal">
+    <div class="js-modal-close"></div>
+    <div class="cart-modal">
+      <div class="cart-modal__qr">
+        <div class="cart-modal__qr-image">
+          <img src="/img/qr-code.jpg" alt="">
+        </div>
+        <div class="cart-modal__qr-content">
+          <div class="inner-page-emoji-title">
+            <img src="/img/emoji_phone.png" alt="emoji phone">
+            <h3 class="inner-page-emoji-title__item">Отсканируйте QR code</h3>
+          </div>
+
+          <p class="cart-modal__description">
+            Откройте встроенное приложение камеры на телефоне или планшете и наведите камеру на это QR-код
+          </p>
+        </div>
+      </div>
+
+      <div class="word-in-line-divider"><span>или</span></div>
+
+      <div class="cart-modal__manual">
+        <div class="cart-modal__info">
+          <div class="inner-page-emoji-title">
+            <img src="/img/emoji_link.png" alt="emoji link">
+            <h3 class="inner-page-emoji-title__item">Ссылка</h3>
+          </div>
+
+          <div class="cart-modal__description">Отправьте ссылку удобным для вас способом</div>
+        </div>
+
+        <div class="cart-modal__links">
+          <a href="#" class="cart-modal__link">
+            <span class="cart-modal__link-icon">
+              <img src="/img/whatsapp--icon.svg" alt="">
+            </span>
+            <span class="cart-modal__link-title">WhatsApp</span>
+          </a>
+
+          <a href="#" class="cart-modal__link">
+            <span class="cart-modal__link-icon">
+              <img src="/img/viber--icon.svg" alt="">
+            </span>
+            <span class="cart-modal__link-title">Viber</span>
+          </a>
+
+          <a href="#" class="cart-modal__link">
+            <span class="cart-modal__link-icon">
+              <img src="/img/telegram--icon.svg" alt="">
+            </span>
+            <span class="cart-modal__link-title">Telegram</span>
+          </a>
+
+          <div class="cart-modal__link js-copy" data-to-copy="">
+            <div class="cart-modal__link-icon">
+              <img src="/img/copy-link--icon.svg" alt="">
+            </div>
+            <div class="cart-modal__link-title">Скопировать ссылку</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

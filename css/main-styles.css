@@ -3370,3 +3370,30 @@ option {
   display: inline-block;
   font-family: 'Inter';
 }
+
+.word-in-line-divider {
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #7A7A9D;
+  text-align: center;
+}
+
+.word-in-line-divider span {
+  position: relative;
+  display: inline-block;
+  padding: 5px 17px;
+  background: #fff;
+}
+
+.word-in-line-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(173, 187, 212, 0.5);
+  transform: translateY(-50%);
+}
