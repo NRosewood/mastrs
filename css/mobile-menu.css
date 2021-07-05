@@ -64,7 +64,8 @@
   cursor: pointer;
   position: absolute;
   left: 35px;
-  top: 25px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 30px;
   height: 30px;
   background-image: url('.././img/close-icon.svg');

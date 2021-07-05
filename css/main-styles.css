@@ -145,8 +145,10 @@ body {
   justify-content: space-between;
 }
 
-.header__logo {
-  max-width: 117px;
+@media (max-width: 1100px) {
+  .header__logo {
+    max-width: 117px;
+  }
 }
 
 .header__content {
