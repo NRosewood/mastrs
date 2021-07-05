@@ -1248,7 +1248,8 @@ li.breadcrumb__item.with-icon a {
 
 .catalog-list__item {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   margin: 0 6px 12px;
   text-decoration: none;
@@ -1271,6 +1272,9 @@ li.breadcrumb__item.with-icon a {
 }
 
 .catalog-list__item--content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 16px 19px;
 }
 
@@ -1287,7 +1291,8 @@ li.breadcrumb__item.with-icon a {
 }
 
 .catalog-list__price {
-  margin-top: 30px;
+  margin-top: auto;
+  padding-top: 30px;
   padding-left: 60px;
   font-size: 18px;
   font-weight: 500;
