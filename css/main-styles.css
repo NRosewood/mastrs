@@ -26,12 +26,16 @@ body {
 
 .sidebar {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #874CFA;
   border-radius: 20px;
   padding: 50px 35px 50px 20px;
   width: 82px;
   transition: 0.5s;
   top: 14px;
+  bottom: 14px;
 }
 
 .sidebar.active {
@@ -211,6 +215,7 @@ body {
 }
 
 .header-notifications__trigger {
+  position: relative;
   height: 60px;
   width: 60px;
   cursor: pointer;
@@ -223,6 +228,17 @@ body {
   background-image: url('.././img/notification-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.header-notifications__trigger--has-new:before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 19px;
+  height: 19px;
+  background: #FF2C55;
+  border-radius: 50%;
 }
 
 .header__notifications--overlay {

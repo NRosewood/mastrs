@@ -160,7 +160,7 @@
   width: 120px;
   left: 50%;
   top: 50%;
-  content: "50%";
+  content: attr(data-progress);
   margin-top: -80px;
   margin-left: -60px;
   border-radius: 100%;
