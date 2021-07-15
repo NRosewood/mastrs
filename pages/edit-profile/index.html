@@ -21,6 +21,10 @@
   <link rel="stylesheet" href="/css/vendor/normalize.css">
   <link rel="stylesheet" href="/css/vendor/swiper-bundle.min.css">
   <link rel="stylesheet" href="/pages/edit-profile/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -379,7 +383,10 @@
 
               <label for="city" class="form-control">
                 Город
-                <input type="text" class="input-field" placeholder="Москва" id="city">
+<!--                <input type="text" class="input-field" placeholder="Москва" id="city">-->
+                <select class="js-example-basic-multiple form-control"  name="" id='citySel'>
+                </select>
+
               </label>
 
               <label for="date_of_birth" class="form-control">
@@ -731,6 +738,44 @@
   <script src="/js/main.js"></script>
   <script src="/js/tabs.js"></script>
   <script src="/js/modal.js"></script>
+  <script>
+    $('#citySel').select2({
+    ajax: {
+    url: '/cities/ajax',
+    dataType: 'json',
+    delay: 200,
+    data: function (params) {
+    return{
+    search: params.term,
+    page : params.page
+    };
+    },
+    processResults: function(data, params){
+    params.page = params.page || 1;
+
+    console.log( data.data)
+    return{
+    results : data.data,
+    pagination: {
+    more: (params.page * 10) <data.total
+          }
+          };
+          }
+          },
+          minimumInputLength: 1,
+          templateResult: function(repo){
+          console.log(repo)
+          return repo.name;
+          },
+          templateSelection: function(repo){
+          console.log(repo)
+          $('#cityinp').val('')
+    $('#cityinp').val(repo.name)
+    return repo.name;
+    }
+
+    });
+  </script>
 </body>
 
 </html>
