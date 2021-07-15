@@ -3826,3 +3826,20 @@ option {
 .pagination--purple .pagination__item:hover {
   background: #874CFA;
 }
+
+.banner {
+  margin-top: 15px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.banner--full-width {
+  width: 100%;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
