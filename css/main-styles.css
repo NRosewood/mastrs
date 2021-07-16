@@ -3843,3 +3843,78 @@ option {
   height: 100%;
   object-fit: cover;
 }
+
+.select2-container {
+  margin-top: 8px;
+  max-width: 100% !important;
+}
+
+.select2-dropdown {
+  border: 1px solid #874CFA;
+  border-top: 0;
+  background: #fff;
+  transform: translateY(-8px);
+  box-shadow: none !important;
+}
+
+.select2-container * {
+  outline: none;
+}
+
+.select2-container--default .select2-selection--single {
+  background: #f0f5fb;
+  height: 53px;
+  border: 0;
+  border-radius: 8px;
+  filter: drop-shadow(0px 1px 2px rgb(50 50 71 / 8%)) drop-shadow(0px 0px 1px rgb(50 50 71 / 20%));
+  transition: 200ms;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, 
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border: 1px solid #874CFA;
+  background: transparent;
+  filter: none;
+  border-bottom: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #000 transparent transparent transparent;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #000 transparent;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #F0F5FB;
+  box-shadow: 0px 1px 2px rgba(50, 50, 71, 0.08), 0px 0px 1px rgba(50, 50, 71, 0.2);
+  transition: border .2s ease;
+  color: #7A828A;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 8px 16px;
+  margin: 0 10px;
+  border-radius: 8px;
+  width: calc(100% - 20px);
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+  border-color: #874CFA;
+  box-shadow: none;
+  background: #fff;
+}
+
+.select2-results__option {
+  padding-left: 15px;
+  padding-right: 15px;
+}
