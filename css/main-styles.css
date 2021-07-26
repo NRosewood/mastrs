@@ -1458,12 +1458,25 @@ li.breadcrumb__item.with-icon a {
 .catalog_cards .common-card {
   height: 185px;
   position: relative;
+  background-color: #fff;
+  background-position: 96% center;
+  border: 1px solid #bebebc;
+  border-radius: 6px;
 }
 
 .catalog_cards .common-card--title {
   position: absolute;
   bottom: 40px;
   left: 20px;
+  font-size: 22px;
+  color: #23262F;
+}
+
+@media (max-width: 400px) {
+  .catalog_cards .common-card--title {
+    font-size: 18px;
+    max-width: 140px;
+  }
 }
 
 .brands__cards {
